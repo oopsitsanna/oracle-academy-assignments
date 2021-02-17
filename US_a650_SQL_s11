@@ -1,0 +1,70 @@
+Lec
+xKcLG38!
+
+https://iacademy3.oracle.com
+
+F61F5294
+Socrative.com
+
+create table teach_emp (
+empno NUMBER(5) PRIMARY KEY,
+ename VARCHAR2(15) NOT NULL,
+job VARCHAR2(10),
+mgr NUMBER(5),
+hiredate DATE DEFAULT (sysdate),
+photo BLOG,
+sal NUMBER(7,2),
+deptno NUMBER(3) NOT NULL
+CONSTRAINT admin_dept_fkey REFERENCES
+departments(department_id));
+
+CREATE TABLE BOOK_TRANSACTION
+{
+TRANSACTION_ID VARCHAR2(6),
+TRANSACTION_DATE DATE DEFAULT SYSDATE,
+TRANSACTION_TYPE VARCHAR2(10),
+MEMBER_ID VARCHAR(6)
+};
+CREATE TABLE AUTHOR
+{
+AUTHOR_ID VARCHAR2(6),
+AUTHOR_NAME VARCHAR2(60)
+};
+CRATE TABLE MEMBERS
+{
+MEMBER_ID VARCHAR2(6),
+FIRST_NAME VARCHAR2(50),
+LAST_NAME VARCHAR2(50),
+STREET_ADDRESS VARCHAR2(50),
+CITY VARCHAR2(20),
+STATE VARCHAR2(2),
+ZIP VARCHAR2(10)
+};
+CREATE TABLE BOOKS
+{
+BOOK_ID VARCHAR2(6),
+TITLE VARCHAR2(255),
+PUBLISHER_ID VARCHAR(6),
+AUTHOR_ID VARCHAR(6)
+};
+CREATE TABLE PUBLISHER
+{
+PUBLISHER_ID VARCHAR2(6),
+PUBLISHER_NAME VARCHAR(100)
+};
+
+
+
+
+
+create table table_ts(c_id NUMBER(6), c_ts TIMESTAMP);
+insert INTO table_ts VALUE(1, '01-JAN-2003 2:00:00');
+
+create table dept(
+dept_id number(8),
+dept_name varchar2(30),
+loc_id number(4),
+constraint pk_dept primary key(dept_id,loc_id));
+
+
+
